@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import { UserProvider } from "@auth0/nextjs-auth0/client";
 import { Providers } from "./providers";
+import NavBar from "@/components/NavBar";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -20,7 +21,11 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <UserProvider>
         <body className={inter.className}>
-          <Providers>{children}</Providers>
+          <Providers>
+            <NavBar />
+
+            {children}
+          </Providers>
         </body>
       </UserProvider>
     </html>

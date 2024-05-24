@@ -7,12 +7,10 @@ import WeOffer from "../components/sections/landingpage/WeOffer";
 import About from "../components/sections/landingpage/About";
 import FAQSection from "../components/sections/landingpage/FAQ";
 import Footer from "../components/sections/landingpage/Footer";
-import NavBar from "../components/NavBar";
 
 function LandingPage() {
   return (
     <>
-      <NavBar />
       <VStack>
         <Hero />
         <WeOffer />
