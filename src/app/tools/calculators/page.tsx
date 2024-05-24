@@ -65,7 +65,7 @@ const Calculator = () => {
 
         <Flex gap={30} alignItems={"center"}>
           <Heading size={"sm"}>Result</Heading>
-          <Input type="number" bg={"white"} disabled={true} value={result} />
+          <Input type="number" bg={"white"} value={result} />
           <Input type="text" bg={"white"} value={"mEq/L"} />
         </Flex>
       </VStack>
