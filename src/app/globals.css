@@ -108,3 +108,7 @@ body {
 .dark body {
   background: black;
 }
+
+input::placeholder {
+  color: red;
+}

@@ -38,6 +38,7 @@ const Calculator = () => {
             <Input
               type="number"
               bg={"white"}
+              placeholder="Value for Na Required"
               value={na}
               onChange={(e) => setNa((prevNa) => parseFloat(e.target.value))}
             />
@@ -45,11 +46,13 @@ const Calculator = () => {
               type="number"
               bg={"white"}
               value={cl}
+              placeholder="Value for Cl Required"
               onChange={(e) => setCl((prevCl) => parseFloat(e.target.value))}
             />
             <Input
               type="number"
               bg={"white"}
+              placeholder="Value for HCO3 Required"
               value={hco3}
               onChange={(e) =>
                 setHco3((prevHco3) => parseFloat(e.target.value))
@@ -65,7 +68,12 @@ const Calculator = () => {
 
         <Flex gap={30} alignItems={"center"}>
           <Heading size={"sm"}>Result</Heading>
-          <Input type="number" bg={"white"} value={result} />
+          <Input
+            type="number"
+            bg={"white"}
+            value={result}
+            placeholder="Result"
+          />
           <Input type="text" bg={"white"} value={"mEq/L"} />
         </Flex>
       </VStack>
